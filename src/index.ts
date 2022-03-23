@@ -12,7 +12,13 @@ const { green: suc, yellow: warn, red: err } = chalk;
 
 //let coubsList = [];
 
-let accountHandle = "lite.one";
+let accountHandle = process.argv[2];
+
+if (!accountHandle) {
+  throw `${err("Account handle is empty!")}\nUsage: ${suc("node .")} ${warn("account_handle")}`;
+}
+
+console.log(`Archiving ${warn(accountHandle)}`);
 
 let coubsData = [];
 
