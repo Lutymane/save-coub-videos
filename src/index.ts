@@ -5,7 +5,6 @@ import { Stream } from "stream";
 import { Timeline } from "timeline";
 
 import chalk from "chalk";
-
 const { green: suc, yellow: warn, red: err } = chalk;
 
 //https://coub.com/api/v2/timeline/channel/lite.one?order_by=newest&permalink=lite.one&type=&page=1
